@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.about-section {
+  padding: 60px 0;
+}
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+}
+.about-text {
+  color: #5f6f82;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.highlight-text {
+  color: #0d8ecf;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+

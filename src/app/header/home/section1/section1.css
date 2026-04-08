@@ -1,0 +1,331 @@
+/* 
+.about {
+  padding: 80px 5%;
+  font-family: 'Segoe UI', sans-serif;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.about-left h4 {
+  color: #1da1d2;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.about-left h1 {
+  font-size: 46px;
+  color: #0f2744;
+  line-height: 1.2;
+  max-width: 620px;
+}
+.underline {
+  width: 200px;
+  height: 6px;
+  background: linear-gradient(90deg, #f07724, #f07724);
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+  animation: slideLine 2s linear infinite;
+}
+@keyframes slideLine {
+  0% { left: -50%; }
+  100% { left: 100%; }
+}
+.about-left p {
+  color: #6b7a90;
+  line-height: 1.8;
+  max-width: 620px;
+  margin-bottom: 25px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 40px;
+  margin-bottom: 30px;
+}
+.feature {
+  color: #0f2744;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.feature i {
+  color: #1da1d2;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.call-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.phone-icon {
+  width: 70px;
+  height: 70px;
+  background: #264f6b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.phone-icon i {
+  font-size: 26px;
+}
+.call-text span {
+  color: #0f2744;
+  font-size: 18px;
+}
+.call-text h3 {
+  color: #1da1d2;
+  margin-top: 5px;
+}
+.about-right img {
+  width: 450px;
+  animation:
+    slideRight 1s ease-out forwards,
+    floatImage 5s ease-in-out infinite 1s;
+}
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-left h1 {
+    font-size: 32px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .about-right img {
+    width: 320px;
+  }
+}
+.line-container {
+  width: 300px;
+  height: 6px;
+  background: #f5c0c0; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.diagonal-fill-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #06A3DA; 
+    border: 2px solid #06A3DA;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.4s ease, border-color 0.4s ease; 
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.diagonal-fill-btn i {
+    margin-left: 6px;
+}
+.diagonal-fill-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -35%; 
+    height: 100%;
+    width: 0;
+    background-color: #f07724; 
+    transform: skewX(50deg); 
+    transform-origin: top left;
+    transition: width 0.9s ease;
+    z-index: -1;
+}
+.diagonal-fill-btn:hover::after {
+    width: 135%; 
+}
+
+.diagonal-fill-btn:hover {
+    color: #FFFFFF; 
+    border-color: #f07724; 
+} */
+
+
+
+ .about {
+  padding: 100px 8%;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.left h4 {
+  color: #06A3DA;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.left h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f2744;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+@keyframes moveShine {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+.left p {
+  color: #6b7a90;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 25px;
+  margin-bottom: 30px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f2744;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+.feature i {
+  color: #06A3DA;
+  font-size: 18px;
+}
+.feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.callbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 15px 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+.callbox:hover {
+  transform: translateY(-5px);
+}
+.callbox:hover .phone-icon {
+  background: #06A3DA;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.phoneicon {
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  color: #06A3DA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.phoneicon i {
+  font-size: 22px;
+}
+.button {
+  padding: 14px 42px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #06A3DA, #0f2744);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+.button:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, #0f2744, #06A3DA);
+}
+.button:active {
+  transform: scale(0.97);
+}
+.about-right img {
+  width: 450px;
+  filter: drop-shadow(0 25px 40px rgba(0,0,0,0.15));
+  animation: floatImage 5s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 32px;
+  }
+.features {
+    grid-template-columns: 1fr;
+  }
+  .about-right img {
+    width: 300px;
+  }
+} 

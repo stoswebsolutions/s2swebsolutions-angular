@@ -1,0 +1,76 @@
+<app-head></app-head>
+<section class="reg-section">
+  <div class="row">
+    <div class="form-col">
+      <h2 class="form-title">Apply for Internship</h2>
+      <form action="internaction" method="post" novalidate>
+        <div class="form-group">
+          <input type="text" name="name" id="name" required placeholder=" ">
+          <label for="name">Full Name</label>
+        </div>
+        <div class="form-row">
+          <div class="form-group half">
+            <input type="email" name="email" id="email" required placeholder=" ">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="form-group half">
+            <input type="tel" name="phone" id="phone" required placeholder=" ">
+            <label for="phone">Phone Number</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <select name="qualification" required>
+            <option value="" disabled selected>Select Qualification</option>
+            <option>B.Tech</option>
+            <option>M.Tech</option>
+            <option>MCA</option>
+            <option>Degree</option>
+            <option>Diploma</option>
+            <option>Others</option>
+          </select>
+          <label>Qualification</label>
+        </div>
+        <div class="form-row">
+          <div class="form-group half">
+            <input type="text" name="collage" id="collage" required placeholder=" ">
+            <label for="collage">College Name</label>
+          </div>
+          <div class="form-group half">
+            <input type="number" name="passout" id="passout" min="2000" max="2099" required placeholder=" ">
+            <label for="passout">Year of Passing</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" name="address" id="address" required placeholder=" ">
+          <label for="address">Address</label>
+        </div>
+        <div class="form-group">
+          <select name="interest" required>
+            <option value="" disabled selected>Choose Internship Program</option>
+            <option>Internship Overview</option>
+            <option>Roadmap</option>
+            <option>MEAN Stack</option>
+            <option>MERN Stack</option>
+            <option>PHP Full Stack</option>
+            <option>Python Full Stack</option>
+            <option>Java Full Stack</option>
+            <option>Flutter Mobile App Development</option>
+            <option>Frontend Specialist Stack</option>
+            <option>Backend / API Developer Stack</option>
+            <option>Career and Industry Add-Ons</option>
+          </select>
+          <label>Internship Program</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="joblocation" id="joblocation" required placeholder=" ">
+          <label for="joblocation">Preferred Job Location</label>
+        </div>
+        <button type="submit" class="btn btn-submit">Apply Now</button>
+      </form>
+    </div>
+    <div class="img-col">
+      <img src="images/internship.png" alt="Internship Image">
+    </div>
+  </div>
+</section>
+<app-foot></app-foot>

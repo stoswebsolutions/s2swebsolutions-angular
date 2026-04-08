@@ -1,0 +1,25 @@
+.footer{
+  background:#0f2744;
+  padding:18px 60px;
+  color:#ffffff;
+}
+.footer .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1240px;
+  margin:auto;
+}
+.left a{
+  color:#fafcfc;
+  text-decoration:underline;
+}
+.right a{
+  color:#ffffff;
+  text-decoration:none;
+  margin:0 6px;
+  font-size:16px;
+}
+.right a:hover{
+  color:#06A3DA;
+}
