@@ -1,55 +1,132 @@
-.stats {
-  display: flex;
-  margin: 40px;
-  gap: 20px;
+/* HERO */
+.hero {
+  position: relative;
 }
-.card {
-  flex: 1;
-  padding: 25px 30px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: 210px;
-  animation: zoomIn 0.7s ease forwards;
-}
-.dark {
-  background: #264f6b;
-  color: #fff;
-}
-.light {
-  background: #e5e5e5;
-  color: #1da1d2;
-}
-.icon {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-}
-.white {
-  background: #fff;
-  color: #1da1d2;
-}
-.darkbg {
-  background: #264f6b;
-  color: #fff;
-}
-.text h3 {
-  font-size: 18px;
-}
-.text h1 {
-  margin-top: 5px;
-  font-size: 36px;
-}
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.85);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }}
 
+.hero img {
+  height: 85vh;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+/* LEFT SIDE HERO TEXT */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: #fff;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  margin: 15px 0 25px;
+  color: #e5e7eb;
+}
+
+/* BUTTON */
+.hero-btn {
+  background: #2563eb;
+  padding: 12px 28px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ===================== */
+/* STATS BAR */
+/* ===================== */
+
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* EACH STAT */
+.stat {
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+/* DIVIDER LINE */
+.stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: #e5e7eb;
+}
+
+/* ICON */
+.stat i {
+  font-size: 28px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* NUMBER */
+.stat h2 {
+  font-size: 32px;
+  color: #111827;
+  font-weight: 700;
+}
+
+/* TEXT */
+.stat p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* HOVER EFFECT */
+.stat:hover {
+  background: #f9fafb;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 992px) {
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .stat:not(:last-child)::after {
+    display: none;
+  }
+
+  .hero-content {
+    left: 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+}
