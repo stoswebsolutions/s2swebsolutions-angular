@@ -1,47 +1,61 @@
 <app-header></app-header>
- <section class="projects">
-<div class="section-title">
-  <h5>Projects</h5>
-  <h1>Custom IT Solutions for Your Successful Business</h1>
-</div>
-  <div class="card-container">
-    <div class="card">
-      <div class="card-image"><img src="/images/mega.jpg" alt="Mega369 Developers"></div>
-      <h3>Mega369 Developers</h3>
-      <p class="category">MEGA369DEVELOPERS.IN</p>
+<section class="partner-section">
+  <div class="container">
+
+    <div class="partner-header">
+      <div class="partner-title">
+        <h2>Our Trusted Partners</h2>
+        <p>
+          We proudly collaborate with leading brands and organizations
+          who trust our services and support our growth journey.
+        </p>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn" (click)="scrollLeft()">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+
+        <button class="carousel-btn" (click)="scrollRight()">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
     </div>
- <div class="card">
-      <div class="card-image"><img src="/images/vkare.jpg" alt="Vkare Foundation"></div>
-      <h3>Vkare Foundation</h3>
-      <p class="category">VKAREFOUNDATION.COM</p>
+
+    <div class="partner-carousel">
+      <div class="partner-track" #carouselTrack>
+
+        <div class="partner-card">
+          <img src="/images/apsonsoft.png" class="partner-logo" alt="Apsonsoft">
+        </div>
+
+        <div class="partner-card">
+          <img src="/images/icfnews.jpg" class="partner-logo" alt="ICF News">
+        </div>
+
+        <div class="partner-card">
+          <img src="/images/mega369.png" class="partner-logo" alt="Mega369">
+        </div>
+
+        <div class="partner-card">
+          <img src="/images/stosweb.png" class="partner-logo" alt="Stosweb">
+        </div>
+
+        <div class="partner-card">
+          <img src="/images/vita.jpg" class="partner-logo" alt="Vita">
+        </div>
+
+        <div class="partner-card">
+          <img src="/images/vkare.jpeg" class="partner-logo" alt="Vkare">
+        </div>
+
+        <div class="partner-card">
+          <img src="/images/vmart.png" class="partner-logo" alt="Vmart">
+        </div>
+
+      </div>
     </div>
-<div class="card">
-      <div class="card-image"><img src="/images/projectcorner.jpg" alt="Projects Corner"></div>
-      <h3>Projects Corner</h3>
-      <p class="category">PROJECTSCORNER.COM</p>
-    </div>
-    <div class="card">
-      <div class="card-image"><img src="/images/vmart.jpg" alt="V‑Mart Fresh"></div>
-      <h3>V-Mart Fresh</h3>
-      <p class="category">VMARTFRESH.COM</p>
-    </div>
-    <div class="card">
-      <div class="card-image"><img src="/images/msv.jpg" alt="MSV Technologies"></div>
-      <h3>MSV Technologies</h3>
-      <p class="category">MSVTECHNOLOGIES.IN</p>
-    </div>
-<div class="card">
-      <div class="card-image"><img src="/images/ws.jpg" alt="Zoro"></div>
-      <h3>Zoro</h3>
-      <p class="category">ZORO.IN</p>
-    </div>
-    <div class="card">
-      <div class="card-image"><img src="/images/ws.jpg" alt="PHP Thesis"></div>
-      <h3>PHP Thesis</h3>
-      <p class="category">PHPTHESIS.COM</p>
-    </div>
+
   </div>
-</section> 
-<app-section5></app-section5>
-<app-section6></app-section6>
+</section>
 <app-footer></app-footer>
