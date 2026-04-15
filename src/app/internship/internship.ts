@@ -8,7 +8,7 @@ import { Footer } from "../footer/footer";
 
 @Component({
   selector: 'app-internship',
-  imports: [Section, Roadmap, Joinnow, Header, Footer],
+  imports: [Section, Roadmap, Joinnow, Header, Footer, Domain],
   templateUrl: './internship.html',
 styleUrls: ['./internship.css'], 
 })
