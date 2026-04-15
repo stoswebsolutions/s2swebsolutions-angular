@@ -9,7 +9,7 @@ import { Footer } from "../../footer/footer";
 
 @Component({
   selector: 'app-hoome',
-  imports: [  Section, Roadmap, Domain, Header, Footer],
+  imports: [  ],
   templateUrl: './hoome.html',
   styleUrl: './hoome.css',
 })
