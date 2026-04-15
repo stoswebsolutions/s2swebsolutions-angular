@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { Head } from "./head/head";
-import { Foot } from './foot/foot';
+
 import { Section } from "./section/section";
-import { Domain } from './domain/domain';
+import { Domain } from './domain/domain';import { Roadmap } from "./roadmap/roadmap";
+import { Joinnow } from "./joinnow/joinnow";
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
 
 @Component({
   selector: 'app-internship',
-  imports: [Head, Foot, Section],
+  imports: [Section, Roadmap, Joinnow, Header, Footer],
   templateUrl: './internship.html',
 styleUrls: ['./internship.css'], 
 })

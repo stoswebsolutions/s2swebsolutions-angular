@@ -7,7 +7,7 @@ import { Section4 } from "../header/home/section4/section4";
 
 @Component({
   selector: 'app-price',
-  imports: [RouterLink, Header, Footer, Section4],
+  imports: [ Header, Footer, Section4],
   templateUrl: './price.html',
   styleUrl: './price.css',
 })

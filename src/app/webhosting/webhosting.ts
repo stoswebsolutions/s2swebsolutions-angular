@@ -6,7 +6,7 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-webhosting',
-  imports: [RouterLink,Header,Footer,],
+  imports: [Header,Footer,],
   templateUrl: './webhosting.html',
   styleUrl: './webhosting.css',
 })

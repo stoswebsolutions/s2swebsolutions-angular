@@ -17,7 +17,7 @@ import { Internship } from '../../internship/internship';
 
 @Component({
   selector: 'app-home',
-  imports: [Header,Section1,Section2,Section3,Section4,Footer,About,Price,Projects,Contact,Internship],
+  imports: [Header,Section1,Section2,Section4,Footer,],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

@@ -5,7 +5,7 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-cms',
-  imports: [RouterLink,Header,Footer],
+  imports: [Header,Footer],
   templateUrl: './cms.html',
   styleUrl: './cms.css',
 })

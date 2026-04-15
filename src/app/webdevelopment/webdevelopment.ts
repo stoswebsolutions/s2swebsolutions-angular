@@ -7,7 +7,7 @@ import { Section1 } from '../header/home/section1/section1';
 
 @Component({
   selector: 'app-webdevelopment',
-  imports: [RouterLink,Header,Footer,],
+  imports: [RouterLink,],
   templateUrl: './webdevelopment.html',
   styleUrl: './webdevelopment.css',
 })

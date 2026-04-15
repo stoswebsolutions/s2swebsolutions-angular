@@ -5,7 +5,7 @@ import { Header } from '../header/header';
 
 @Component({
   selector: 'app-ecommerce',
-  imports: [RouterLink,Header,],
+  imports: [Header,],
   templateUrl: './ecommerce.html',
   styleUrl: './ecommerce.css',
 })

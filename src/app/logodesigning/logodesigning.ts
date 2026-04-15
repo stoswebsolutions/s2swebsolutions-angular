@@ -6,7 +6,7 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-logodesigning',
-  imports: [RouterLink,Header,Footer,],
+  imports: [Header,Footer,],
   templateUrl: './logodesigning.html',
   styleUrl: './logodesigning.css',
 })

@@ -6,7 +6,7 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-digitalmarketing',
-  imports: [RouterLink,Header,Footer,],
+  imports: [Header,Footer,],
   templateUrl: './digitalmarketing.html',
   styleUrl: './digitalmarketing.css',
 })
