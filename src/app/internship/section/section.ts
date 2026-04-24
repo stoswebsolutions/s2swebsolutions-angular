@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-section',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './section.html',
   styleUrl: './section.css',
 })

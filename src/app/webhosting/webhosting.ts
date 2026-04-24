@@ -53,7 +53,7 @@ export class Webhosting {
     {
       title: 'E-Commerce Development',
       description: 'Create powerful online stores that boost sales and customer experience.',
-      image: '/images/cms.png',
+      image: '/images/ecommerce.png',
       points: [
         'Secure Payment Integration',
         'Shopping Cart सिस्टम',
