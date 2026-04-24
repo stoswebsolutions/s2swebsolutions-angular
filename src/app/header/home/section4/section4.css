@@ -245,3 +245,81 @@
 .accordion-card.active .accordion-arrow i {
   transform: rotate(90deg);
 }
+/* ================= MODERN GEOMETRIC BACKGROUND ================= */
+.pricing-section {
+  position: relative;
+  padding: 100px 20px;
+  overflow: hidden;
+  z-index: 1;
+
+  /* smooth mesh gradient */
+  background: linear-gradient(120deg, #f8fafc 0%, #eef2ff 40%, #fdf4ff 100%);
+}
+
+/* ===== ANGLED LINES (GEOMETRIC STYLE) ===== */
+.pricing-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.03) 0px,
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 60px
+  );
+  z-index: -1;
+}
+
+/* ===== GRID OVERLAY ===== */
+.pricing-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -2;
+}
+
+/* ===== FLOATING SQUARES (NOT CIRCLES) ===== */
+.shape {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  opacity: 0.08;
+  transform: rotate(45deg);
+  animation: floatBox 12s infinite ease-in-out;
+}
+
+/* DIFFERENT POSITIONS */
+.shape1 {
+  top: 20%;
+  left: 10%;
+}
+
+.shape2 {
+  bottom: 15%;
+  right: 10%;
+}
+
+.shape3 {
+  top: 80%;
+  left: 5%;
+}
+.shape4 {
+  top: 20%;
+  right: 10%;
+}
+
+/* ANIMATION */
+@keyframes floatBox {
+  0%, 100% {
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(-20px);
+  }
+}

@@ -56,7 +56,7 @@
   content: "";
   width: 40px;
   height: 2px;
-  background: #06A3DA;
+  background: #e86b0c;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -107,14 +107,12 @@
   height: 38px;
   margin-right: 10px;
   border-radius: 50%;
-  border: 1px solid #06A3DA;
-  color: #06A3DA;
+  border: 1px solid #f6f9fa;
   transition: 0.3s;
 }
 
 .social-icons a:hover {
-  background: #06A3DA;
-  color: #fff;
+  background:#e86b0c;
   transform: translateY(-4px);
 }
 
