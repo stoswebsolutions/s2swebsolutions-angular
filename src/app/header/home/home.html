@@ -45,3 +45,37 @@
 <app-section4></app-section4>
 <app-projects></app-projects>
 <app-footer></app-footer>
+<div class="wa-container">
+
+  <!-- Chat Box -->
+  <div class="wa-box" *ngIf="isOpen">
+    <div class="wa-header">
+      <div>
+        <strong>S2S Web Solutions</strong>
+        <p>Typically replies within a minute</p>
+      </div>
+      <span (click)="toggle()">✕</span>
+    </div>
+
+    <div class="wa-body">
+      <p>Hi there! 👋<br>How can I help you?</p>
+    </div>
+
+    <a 
+      [href]="'https://wa.me/919703180922?text=' + message" 
+      target="_blank"
+      class="wa-start"
+    >
+      Start Chat
+    </a>
+  </div>
+
+  <!-- Floating Button -->
+  <div class="wa-button" (click)="toggle()">
+    <i class="bi bi-whatsapp"></i>
+  </div>
+
+</div>
+<button *ngIf="showScroll" class="scroll-top" (click)="scrollToTop()">
+  <i class="bi bi-arrow-up"></i>
+</button>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Header } from '../header';
 import { RouterLink, RouterModule } from '@angular/router';
 import { Section1 } from './section1/section1';
@@ -13,14 +13,34 @@ import { Projects } from '../../projects/projects';
 import { Contact } from '../../contact/contact';
 
 import { Internship } from '../../internship/internship';
+import { WhatsappChat } from "./whatsapp-chat/whatsapp-chat";
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Section1, Section2, Section4, Footer, Projects],
+  imports: [Header, Section1, Section2, Section4, Footer, Projects,CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home {
+isOpen = false;
 
+  message = encodeURIComponent("Hi, I want internship details");
+
+  toggle() {
+    this.isOpen = !this.isOpen;
+  }
+  showScroll = false;
+
+@HostListener('window:scroll', [])
+onWindowScroll() {
+  this.showScroll = window.scrollY > 200;
+}
+scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 }

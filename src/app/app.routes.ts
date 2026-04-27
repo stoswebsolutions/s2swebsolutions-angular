@@ -20,6 +20,7 @@ import { Domain } from './internship/domain/domain';
 import { Hoome } from './internship/hoome/hoome';
 import { Roadmap } from './internship/roadmap/roadmap';
 import { Joinnow } from './internship/joinnow/joinnow';
+import { WhatsappChat } from './header/home/whatsapp-chat/whatsapp-chat';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -43,7 +44,8 @@ export const routes: Routes = [
   { path:'domain',component:Domain},
   {path:'hoome',component:Hoome},
   {path:'roadmap',component:Roadmap},
-  {path:'joinnow',component:Joinnow}
+  {path:'joinnow',component:Joinnow},
+  {path:"whatsapp-chat",component:WhatsappChat}
   
 
 ];

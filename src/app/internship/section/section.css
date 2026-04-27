@@ -4,7 +4,9 @@
   height: 750px;
   overflow: hidden;
 }
-input[type="radio"] { display: none; }
+input[type='radio'] {
+  display: none;
+}
 .slides {
   position: relative;
   width: 100%;
@@ -14,7 +16,8 @@ input[type="radio"] { display: none; }
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,46 +48,60 @@ input[type="radio"] { display: none; }
   animation: slideInBottom 1s ease forwards;
 }
 @keyframes slideInTop {
-  0% { transform: translateY(-50px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes slideInBottom {
-  0% { transform: translateY(50px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .slide::before {
   content: '';
   position: absolute;
-  width: 100%; height: 100%;
-  top: 0; left: 0;
-  background: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 .slide-content h1 {
-   font-family: 'Montserrat', 'Segoe UI', sans-serif; 
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
   font-weight: 700;
   font-size: 48px;
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   margin-bottom: 15px;
   line-height: 1.2;
 }
 .slide-content p {
- font-family: 'Roboto', 'Segoe UI', sans-serif;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #ffffff;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.5); 
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   line-height: 1.5;
 }
 .slide-content a {
-    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  background:linear-gradient(135deg,#06A3DA,#0f2744);
+  background: linear-gradient(135deg, #06a3da, #0f2744);
   color: #fff;
   padding: 14px 28px;
   border-radius: 6px;
@@ -92,16 +109,24 @@ input[type="radio"] { display: none; }
   opacity: 0;
   animation: buttonPop 1s 0.5s forwards;
   transform: scale(0.8);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 .slide-content a:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(255,69,0,0.6);
+  box-shadow: 0 8px 20px rgba(255, 69, 0, 0.6);
 }
 @keyframes buttonPop {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .navigation-manual {
   position: absolute;
@@ -113,172 +138,383 @@ input[type="radio"] { display: none; }
   z-index: 3;
 }
 .manual-btn {
-  width: 16px; height: 16px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 2px solid #fff;
   cursor: pointer;
   transition: all 0.3s;
 }
-.manual-btn:hover { background: #fff; }
-#slide1:checked ~ .navigation-manual label[for="slide1"],
-#slide2:checked ~ .navigation-manual label[for="slide2"] {
+.manual-btn:hover {
   background: #fff;
 }
-@media(max-width:768px){
-  .slide-content h1{ font-size: 32px; }
-  .slide-content p{ font-size: 18px; }
+#slide1:checked ~ .navigation-manual label[for='slide1'],
+#slide2:checked ~ .navigation-manual label[for='slide2'] {
+  background: #fff;
 }
-.career-section{
-padding:90px 8%;
-font-family:Segoe UI;
-text-align:center;
+@media (max-width: 768px) {
+  .slide-content h1 {
+    font-size: 32px;
+  }
+  .slide-content p {
+    font-size: 18px;
+  }
 }
-.main-title{
-font-size:42px;
-font-weight:700;
-color:#0f2744;
-margin-bottom:20px;
-position:relative;
-display:inline-block;
-padding-bottom:10px;
+.career-section {
+  padding: 90px 8%;
+  font-family: Segoe UI;
+  text-align: center;
 }
-.subtitle{
-color:#555;
-margin-bottom:30px;
+.main-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f2744;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
 }
-.domain-buttons{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:18px;
-margin:40px 0 60px;
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
 }
-.domain-btn{
-display:inline-block;
-  background:linear-gradient(135deg,#06A3DA,#0f2744);
-  color:#fff !important;
-  padding:10px 24px;
-  font-size:16px;
-  font-weight:600;
-  text-decoration:none;
-border-radius: 15px;
-  transition:all 0.3s ease;
+.domain-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin: 40px 0 60px;
 }
-.domain-btn:hover{
-  transform:translateY(-3px) scale(1.03);
-  background:linear-gradient(135deg,#0f2744,#06A3DA);
+.domain-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #06a3da, #0f2744);
+  color: #fff !important;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
-.roadmap-title{
-font-size:42px;
-font-weight:700;
-color:#0f2744;
-margin-bottom:20px;
-position:relative;
-display:inline-block;
-padding-bottom:10px;
+.domain-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, #0f2744, #06a3da);
 }
-.roadmap-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+.roadmap-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f2744;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
 }
-.roadmap-card{
-height:230px;
-background-size:cover;
-background-position:center;
-border-radius:10px;
-position:relative;
-display:flex;
-align-items:flex-end;
-justify-content:center;
-text-align:center;
-overflow:hidden;
-color:white;
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
-.roadmap-card::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.5);  
+.roadmap-card {
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
 }
-.card-content{
-position:relative;
-padding:20px;
+.roadmap-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-.card-content h3{
-font-size:18px;
-margin-bottom:5px;
+.card-content {
+  position: relative;
+  padding: 20px;
 }
-.card-content p{
-font-size:14px;
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
-.roadmap-card:hover{
-transform:translateY(-8px);
-transition:0.3s;
+.card-content p {
+  font-size: 14px;
 }
-.timeline{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
-margin-top:60px;
-flex-wrap:wrap;
-}
-
-/* circle */
-
-.circle{
-width:110px;
-height:110px;
-border-radius:50%;
-border:6px solid #06A3DA;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:34px;
-font-weight:700;
-color:#0f2744;
-background:white;
-box-shadow:0 6px 20px rgba(0,0,0,0.1);
-transition:0.35s;
+.roadmap-card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
 }
 
-/* line */
-
-.line{
-width:100px;
-height:4px;
-background:#06A3DA;
-transition:0.35s;
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f9ff, #eef4ff);
+  color: #0f172a;
 }
 
-/* text */
-
-.timeline-item{
-text-align:center;
+/* ===== SECTION ===== */
+.internship-section {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.timeline-item p{
-margin-top:15px;
-color:#555;
-font-size:18px;
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* hover effect */
-
-.timeline-item:hover .circle{
-background:#06A3DA;
-color:white;
-transform:translateY(-8px) scale(1.05);
-box-shadow:0 12px 30px rgba(0,0,0,0.2);
+/* ===== TITLES ===== */
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #e86b0c;
+  margin-bottom: 10px;
 }
 
-/* line hover */
+.subtitle {
+  color: #64748b;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
 
-.timeline-item:hover + .line{
-background:#0f2744;
-transform:scaleX(1.2);
+/* ===== DOMAIN TAGS ===== */
+.domains {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.domains span {
+  padding: 10px 18px;
+  border-radius: 30px;
+  border: 1px solid #0d8ecf;
+  color: #0d8ecf;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.domains span:hover {
+  background: #0d8ecf;
+  color: #fff;
+}
+
+/* .domains .active {
+  background: #0d8ecf;
+  color: white;
+  box-shadow: 0 5px 15px rgba(14,165,165,0.3);
+} */
+
+/* ===== ROADMAP TITLE ===== */
+.roadmap-title {
+  font-size: 26px;
+  margin-bottom: 40px;
+  color: #e86b0c;
+}
+
+/* ===== GRID ===== */
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #0d8ecf;
+  font-size: 14px;
+}
+
+/* ===== HOVER EFFECT ===== */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .roadmap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+}
+/* SECTION */
+.numbers-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8fbff, #eef6fb);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TITLE */
+.numbers-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e86b0c;
+  margin-bottom: 10px;
+}
+
+.numbers-sub {
+  color: #6b7c93;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ITEM */
+.timeline-item {
+  text-align: center;
+  position: relative;
+}
+
+/* CIRCLE */
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f2744;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white),
+                    linear-gradient(135deg, #06a3da, #0f2744);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+}
+
+/* NUMBER */
+.number {
+  font-size: 34px;
+}
+
+.plus {
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+/* LINE */
+.line {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, #06a3da, #0f2744);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+/* TEXT */
+.timeline-item p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #5f6f82;
+}
+
+/* HOVER EFFECT */
+.timeline-item:hover .circle {
+  transform: translateY(-10px) scale(1.08);
+  background: linear-gradient(135deg, #06a3da, #0f2744);
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(6,163,218,0.25);
+}
+
+/* LINE ANIMATION */
+.timeline-item:hover + .line {
+  transform: scaleX(1.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .line {
+    width: 3px;
+    height: 50px;
+  }
+
+  .timeline-item:hover + .line {
+    transform: scaleY(1.3);
+  }
+}
+/* FADE DOWN BASE */
+.fade-down {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.8s ease;
+}
+
+/* WHEN ACTIVE */
+.fade-down.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* OPTIONAL DELAYS (for stagger effect) */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.fade-down {
+  animation: fadeDown 1s ease forwards;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

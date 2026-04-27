@@ -9,7 +9,7 @@
   text-align: center;
   font-size: 42px;
   font-weight: 700;
-  color: #0f172a;
+  color: #e86b0c;
   margin-bottom: 70px;
   position: relative;
 }
@@ -119,5 +119,27 @@
   }
   50% {
     transform: translateY(-6px);
+  }
+}
+/* ================= FADE DOWN ANIMATION ================= */
+
+/* Initial state */
+.card {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: fadeDown 0.8s ease forwards, floatCard 6s ease-in-out infinite;
+}
+
+/* Stagger delay */
+.card:nth-child(1) { animation-delay: 0.1s, 0s; }
+.card:nth-child(2) { animation-delay: 0.3s, 2s; }
+.card:nth-child(3) { animation-delay: 0.5s, 0s; }
+.card:nth-child(4) { animation-delay: 0.7s, 2s; }
+
+/* Keyframes */
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

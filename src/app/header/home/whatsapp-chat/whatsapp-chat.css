@@ -1,0 +1,81 @@
+.wa-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.wa-button {
+  width: 60px;
+  height: 60px;
+  background: #ff7a00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(255,122,0,0.4);
+  transition: 0.3s;
+}
+
+.wa-button:hover {
+  transform: scale(1.1);
+}
+
+/* Chat Box */
+.wa-box {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  animation: slideUp 0.3s ease;
+}
+
+/* Header */
+.wa-header {
+  background: #075E54;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wa-header p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Body */
+.wa-body {
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Start Button */
+.wa-start {
+  display: block;
+  text-align: center;
+  background: #ff7a00;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

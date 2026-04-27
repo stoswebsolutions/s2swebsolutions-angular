@@ -23,5 +23,29 @@
   font-weight: 600;
   line-height: 1.5;
 }
+/* ================= FADE DOWN ================= */
 
+.about-text,
+.highlight-text {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeDown 0.8s ease forwards;
+}
+
+/* delay for better look */
+.about-text {
+  animation-delay: 0.2s;
+}
+
+.highlight-text {
+  animation-delay: 0.5s;
+}
+
+/* keyframes */
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
