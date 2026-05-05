@@ -15,6 +15,7 @@ import { Contact } from '../../contact/contact';
 import { Internship } from '../../internship/internship';
 import { WhatsappChat } from "./whatsapp-chat/whatsapp-chat";
 import { CommonModule } from '@angular/common';
+import { environment } from '../../../environments/environment.prod';
 
 
 @Component({
@@ -43,4 +44,5 @@ scrollToTop() {
     behavior: 'smooth'
   });
 }
+readonly imageBaseUrl = environment.apiBaseUrl;
 }

@@ -4,7 +4,7 @@ import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-section2',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './section2.html',
   styleUrl: './section2.css',
 })
