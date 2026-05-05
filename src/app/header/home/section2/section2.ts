@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-section2',
@@ -8,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './section2.css',
 })
 export class Section2 {
-
+ readonly imageBaseUrl = environment.apiBaseUrl;
 }

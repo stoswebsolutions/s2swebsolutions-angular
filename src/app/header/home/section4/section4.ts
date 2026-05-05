@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-section4',
@@ -25,4 +26,5 @@ export class Section4 implements AfterViewInit {
       });
     });
   }
+  readonly imageBaseUrl=environment.apiBaseUrl;
 }

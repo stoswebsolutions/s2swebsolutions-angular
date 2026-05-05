@@ -8,7 +8,7 @@ import { Webhosting } from "../webhosting/webhosting";
 
 @Component({
   selector: 'app-webdevelopment',
-  imports: [RouterLink, Header, Footer, Webhosting],
+  imports: [Header, Footer, Webhosting],
   templateUrl: './webdevelopment.html',
   styleUrl: './webdevelopment.css',
 })

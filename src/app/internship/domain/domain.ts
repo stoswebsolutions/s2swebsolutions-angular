@@ -3,6 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { Home } from "../../header/home/home";
 import { Foot } from "../foot/foot";
 import { Head } from "../head/head";
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -12,5 +13,5 @@ import { Head } from "../head/head";
   styleUrl: './domain.css',
 })
 export class Domain {
-
+readonly imageBaseUrl = environment.apiBaseUrl;
 }

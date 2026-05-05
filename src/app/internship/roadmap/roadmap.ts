@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Foot } from "../foot/foot";
 import { Head } from "../head/head";
+import { environment } from '../../../environments/environment.prod';
 
 
 
@@ -11,5 +12,5 @@ import { Head } from "../head/head";
   styleUrl: './roadmap.css',
 })
 export class Roadmap {
-
+readonly imageBaseUrl = environment.apiBaseUrl;
 }

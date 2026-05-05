@@ -7,7 +7,7 @@ import { Foot } from "../foot/foot";
 
 @Component({
   selector: 'app-joinnow',
-  imports: [Header, Footer, Head, Foot],
+  imports: [ Head, Foot],
   templateUrl: './joinnow.html',
   styleUrl: './joinnow.css',
 })

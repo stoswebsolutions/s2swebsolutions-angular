@@ -4,6 +4,7 @@ import { Header } from '../header/header';
 import { Footer } from '../footer/footer';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../../environments/environment.prod';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class Webhosting {
   activeIndex: number | null = 0; // first open
-
+  readonly imageBaseUrl = environment.apiBaseUrl;
   services = [
     {
       title: 'Website Design',
