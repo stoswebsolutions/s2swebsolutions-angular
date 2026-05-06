@@ -43,7 +43,7 @@ export class Webhosting {
     {
       title: 'Mobile App Development',
       description: 'Build high-performance mobile apps for Android and iOS platforms.',
-      image: '/images/appdevelop.png',
+      image: 'images/appdevelop.png',
       points: [
         'User-Friendly UI',
         'Cross-Platform Apps',
